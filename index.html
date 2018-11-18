@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>RTMP视频流</title>
+    <script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <h4>关于RTMP视频流这点事</h4>
+    <div class="video active"  style="width: 600px; height: 300px" id="video1"></div>
+
+    <script type="text/javascript">
+        var videoObject = {
+            container: '.video',//“#”代表容器的ID，“.”或“”代表容器的class
+            variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+            poster: 'http://bbs.ckplayer.com/uc_server/avatar.php?uid=45579&size=middle',
+            video: 'http://221.228.226.23/11/t/j/v/b/tjvbwspwhqdmgouolposcsfafpedmb/sh.yinyuetai.com/691201536EE4912BF7E4F1E2C67B8119.mp4'//视频地址
+        };
+        var player = new ckplayer(videoObject);
+    </script>
+</body>
+
+</html>
